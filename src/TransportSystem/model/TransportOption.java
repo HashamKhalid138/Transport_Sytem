@@ -9,7 +9,7 @@ public class TransportOption {
     private String name;
     private String flexibility;
     private String restriction;
-    private List<TransportFilter> filters; // Store associated filters
+    private List<TransportFilter> filters;
 
     public TransportOption(String name, String flexibility, String restriction) {
         this.name = name;
@@ -18,7 +18,6 @@ public class TransportOption {
         this.filters = new ArrayList<>();
     }
 
-    // Getter methods
     public String getName() {
         return name;
     }
@@ -31,7 +30,6 @@ public class TransportOption {
         return restriction;
     }
 
-    // Methods for filter management
     public void addFilter(TransportFilter filter) {
         filters.add(filter);
     }
