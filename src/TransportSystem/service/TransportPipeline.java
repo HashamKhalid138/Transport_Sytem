@@ -4,11 +4,11 @@ import TransportSystem.model.TransportOption;
 
 public class TransportPipeline {
     public boolean process(TransportOption option) {
-        for (TransportFilter filter : option.getFilters()) { // Use filters from the TransportOption
+        for (TransportFilter filter : option.getFilters()) { 
             if (filter.apply(option)) {
-                return true; // Option passes the filter
+                return true;
             }
         }
-        return false; // Option fails all filters
+        return false; 
     }
 }
